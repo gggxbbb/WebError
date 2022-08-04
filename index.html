@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>Loading...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="charset" content="utf-8">
+</head>
+
+<body>
+
+    <script>
+
+        var ua = navigator.userAgent;
+        var browser = 'unknown';
+        if (ua.indexOf('MSIE') > 0) {
+            browser = 'ie';
+        } else if (ua.indexOf('Edg') > 0) {
+            browser = 'edge';
+        } else if (ua.indexOf('Firefox') > 0) {
+            browser = 'firefox';
+        } else if (ua.indexOf('Chrome') > 0) {
+            browser = 'chrome';
+        } else if (ua.indexOf('Safari') > 0) {
+            browser = 'safari';
+        } else if (ua.indexOf('Opera') > 0) {
+            browser = 'opera';
+        }
+
+        switch (browser) {
+            case 'chrome':
+                window.location.href = '/chrome';
+                break;
+            default:
+                window.location.href = '/chrome';
+                break;
+        }
+
+    </script>
+
+</body>
+
+</html>
